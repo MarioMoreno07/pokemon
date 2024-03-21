@@ -40,4 +40,9 @@ class MainActivity : AppCompatActivity(),PokemonListener {
 }
 
 
+/*
+Como no he conseguido resolver el fallo del toast , he dejado la url como parte del view de pokemons
+ */
+
+
 

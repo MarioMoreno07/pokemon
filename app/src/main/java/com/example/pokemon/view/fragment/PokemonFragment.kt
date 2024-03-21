@@ -41,19 +41,20 @@ class PokemonFragment : Fragment(),PokemonListener {
         val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerPokemon)
         recyclerView.layoutManager= LinearLayoutManager(requireContext())
 
-        val pc : TextView = view.findViewById(R.id.textView2)
 
-        pc.setOnClickListener {
+
+
             pokemons=obtenerPokemon()
             pokemonAdapter= PokemonAdapter(pokemons,this,requireContext())
             recyclerView.adapter=pokemonAdapter
-        }
+
 
 
 
 
         return view
     }
+
 
     override fun onCLickPokemon(pokemon: Pokemon) {
 

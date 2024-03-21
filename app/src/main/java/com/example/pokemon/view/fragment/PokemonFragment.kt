@@ -56,8 +56,8 @@ class PokemonFragment : Fragment(),PokemonListener {
     }
 
     override fun onCLickPokemon(pokemon: Pokemon) {
-        val url=pokemon.url
-        Toast.makeText(context, "Url: $url",Toast.LENGTH_LONG).show()
+
+        Toast.makeText(context, "Url: "+pokemon.url,Toast.LENGTH_LONG).show()
 
     }
 

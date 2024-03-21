@@ -33,8 +33,7 @@ class MainActivity : AppCompatActivity(),PokemonListener {
     }
 
     override fun onCLickPokemon(pokemon: Pokemon) {
-        val url=pokemon.url
-        Toast.makeText(this, "Url: $url", Toast.LENGTH_LONG).show()
+        Toast.makeText(this,"Url: "+pokemon.url, Toast.LENGTH_SHORT).show()
     }
 
 
